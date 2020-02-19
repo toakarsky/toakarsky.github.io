@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="assets/fonts/inter/inter.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/jquery_cookies.js"></script>
+    <script>
+        var i = Cookies.get('lang');
+        if (i == undefined) {
+            Cookies.set('lang', 'polish', { expires: 365 });
+            console.log('Creating new cookie for language');
+        }
+    </script>
+
+    <title>Kamil Tokarski - my projects</title>
+</head>
+
+<body>
+    <!-- <div class="background bg-blue"></div> -->
+    <div class="background bg-orange"></div>
+    <div class="wrapper">
+        <nav class="main-nav">
+            <ul>
+                <li>
+                    <a href="index.html"><span class="english">About</span></a>
+                </li>
+                <li>
+                    <a href="#"><span class="english">Work</span></a>
+                </li>
+                <li>
+                    <a href="contact.html"><span class="english">Contact</span></a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="main-content">
+            <div class="text-holder work">
+                <h1>
+                    <span class="english">
+                        coming soon ...
+                    </span>
+                </h1>
+            </div>
+        </div>
+
+        <footer class="main-footer">
+            <a href="https://github.com/toakarsky">@toakarsky</a>
+        </footer>
+    </div>
+</body>
+
+</html>
